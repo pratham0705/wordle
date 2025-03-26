@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body">
+        <div class="side">
+            <div class="text">
+                <button class="start">Start</button>
+                <button class="change">Change Word</button>
+                <div class="win">
+                    <p id="win"></p>
+                    <button class="next">Next Round</button>
+                </div>
+                <div class="guess">
+                    <p id="guess"></p>
+                    <button class="retry">Retry</button>
+                </div>
+            </div>
+            <div class="keyboard">
+                <div class="keys">
+                    <button class="key">Q</button>
+                    <button class="key">W</button>
+                    <button class="key">E</button>
+                    <button class="key">R</button>
+                    <button class="key">T</button>
+                    <button class="key">Y</button>
+                    <button class="key">U</button>
+                    <button class="key">I</button>
+                    <button class="key">O</button>
+                    <button class="key">P</button>
+                    <br>
+                    <button class="key">A</button>
+                    <button class="key">S</button>
+                    <button class="key">D</button>
+                    <button class="key">F</button>
+                    <button class="key">G</button>
+                    <button class="key">H</button>
+                    <button class="key">J</button>
+                    <button class="key">K</button>
+                    <button class="key">L</button>
+                    <br>
+                    <div class="bottomLine">
+                        <div class="bottomKeys">
+                            <button class="key">Z</button>
+                            <button class="key">X</button>
+                            <button class="key">C</button>
+                            <button class="key">V</button>
+                            <button class="key">B</button>
+                            <button class="key">N</button>
+                            <button class="key">M</button>
+                        </div>
+                        <button class="fa-solid fa-delete-left delete"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h1>
+                <div class="i pink">W</div>
+                <div class="i orange">O</div>
+                <div class="i blue">R</div>
+                <div class="i purple">D</div>
+                <div class="i green">L</div>
+                <div class="i darkOrange">E</div>
+                <div class="i red">!</div>
+            </h1>
+            <div class="container">
+                <div class="game">
+                    <button class="gameBtn first"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                    <button class="gameBtn"></button>
+                </div>
+                <button class="submit">Submit</button>
+            </div>
+        </div>
+        <div class="hint">
+            <p class="letter"></p>
+            <i class="fa-solid fa-magnifying-glass hintI"></i>
+            <span>Hint</span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;   
+    font-family: "Winky Sans";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bgColor{
+    background-color: rgb(206, 206, 206);
+}
+
+h1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.grey{
+    background-color: rgb(155, 155, 155);
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.orange{
+    background-color: rgb(231, 189, 111);
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.purple{
+    background-color: rgb(93, 53, 93);
+}
+
+.green{
+    background-color: rgb(169, 236, 169);
+}
+
+.darkOrange{
+    background-color: rgb(196, 96, 13);
+}
+
+.red{
+    background-color: rgb(225, 108, 108);
+}
+
+.body{
+    display: flex;
+}
+
+.i{
+    margin-top: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem;
+    margin-left: 0.2rem;
+
+}
+
+.mainPosition{
+    margin-left: 12rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30rem;
+    padding: 2rem;
+}
+
+.gameBtn{
+    height: 5rem;
+    width: 5rem;
+    margin: 0.2rem;
+    border-radius: 0.7rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.gameBtn:hover {
+    background-color: rgb(232, 232, 232);
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.submit{
+    height: 3.5rem;
+    width: 10rem;
+    color: white;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+
+.keyboard{
+    padding: 0.5rem;
+    margin: 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 23rem;
+    height: 8rem;
+    margin-left: 2rem;
+    margin-top: 16rem;
+}
+
+.keyboardPosition{
+    margin-top: 32rem;
+}
+
+.keys{
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.6rem;
+}
+
+.key{
+    padding: 0;
+    margin: 0;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.03rem;
+}
+
+.win{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#win{
+    margin-top: 5rem;
+    color: rgb(7, 83, 27);
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    margin-top: 16rem;
+}
+
+#guess{
+    margin-top: 5rem;
+    color: rgb(170,0,0);
+    font-size: 1.5rem;
+    margin-top: 10rem;
+}
+
+.hide{
+    display: none;
+}
+
+.next{
+    height: 2.5rem;
+    width: 7rem;
+    color: white;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    background-color: black;
+}
+
+.retry{
+    height: 2.5rem;
+    width: 7rem;
+    color: white;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+.start{
+    height: 2.5rem;
+    width: 7rem;
+    color: white;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    background-color: black;
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+}
+
+.change{
+    height: 2.5rem;
+    width: 8rem;
+    color: white;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+.hint{
+    align-items: flex-end;
+    align-self: flex-end;
+    flex-direction: column;
+}
+
+.hintI{
+    align-self: flex-end;
+    margin-left: 6rem;
+    border: 1px solid black;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.hintI:hover{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2.3rem;
+    background-color: rgb(224, 100, 183);
+}
+
+.letter{
+    margin-bottom: 20rem; 
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.delete{
+    font-size: 1.4rem;
+    margin-left: 0.7rem;
+    border: none;
+    background-color: rgb(206, 206, 206);
+}
+
+.bottomLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
